@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".view.activities.DetalleNoticia">
+
+
+
+    <WebView
+        android:id="@+id/myNewsWebView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </WebView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btnShare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@string/fab_transformation_scrim_behavior"
+        android:padding="10dp"
+        android:src="@android:drawable/ic_menu_share"
+        app:fabSize="normal" />
+
+</FrameLayout>

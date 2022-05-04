@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_portal"
+            android:title="Portal de Noticias"
+            android:icon="@drawable/ic_new"
+            android:iconTint="@color/teal_700"
+            android:checked="true" />
+
+        <item
+            android:id="@+id/nav_busqueda"
+            android:title="Búsqueda Avanzada"
+            android:icon="@drawable/ic_busqueda"
+            android:iconTint="@color/teal_700"/>
+
+
+    </group>
+
+    <item android:title="Categorías">
+         <menu>
+                <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Neg"
+                    android:title="Negocios"
+                    android:icon="@drawable/ic_bitcoin"
+                    android:iconTint="@color/teal_700"
+                    android:checked="true" />
+
+                <item
+                    android:id="@+id/nav_Tec"
+                    android:title="Tecnología"
+                    android:icon="@drawable/ic_tech"
+                    android:iconTint="@color/teal_700"/>
+
+                <item
+                    android:id="@+id/nav_Cien"
+                    android:title="Ciencia"
+                    android:icon="@drawable/ic_ciencia"
+                    android:iconTint="@color/teal_700"/>
+                <item
+                    android:id="@+id/nav_Dep"
+                    android:title="Deportes"
+                    android:icon="@drawable/ic_deportes"
+                    android:iconTint="@color/teal_700"/>
+                <item
+                        android:id="@+id/nav_Entre"
+                        android:title="Entretenimiento"
+                        android:icon="@drawable/ic_entretenimiento"
+                        android:iconTint="@color/teal_700"/>
+                <item
+                        android:id="@+id/nav_Salud"
+                        android:title="Salud"
+                        android:icon="@drawable/ic_salud"
+                        android:iconTint="@color/teal_700"/>
+                </group>
+         </menu>
+    </item>
+
+    <item android:title="Conversemos">
+            <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/txtSoporte"
+                    android:title="Soporte"
+                    android:icon="@drawable/ic_news"
+                    android:iconTint="@color/teal_700"
+                    android:checked="true" />
+
+                <item
+                    android:id="@+id/txtContacto"
+                    android:title="Contactanos"
+                    android:icon="@drawable/ic_buscar"
+                    android:iconTint="@color/teal_700"/>
+
+
+            </group>
+            </menu>
+        </item>
+    <item android:title="Salir">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_Exit"
+                    android:title="Cerrar Sesión"
+                    android:icon="@drawable/ic_news"
+                    android:iconTint="@color/teal_700"
+                    android:checked="true" />
+
+            </group>
+        </menu>
+    </item>
+
+
+
+</menu>

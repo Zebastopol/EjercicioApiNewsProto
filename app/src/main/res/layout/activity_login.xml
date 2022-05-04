@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.activities.Login">
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnRegistro"
+        app:layout_constraintVertical_bias="0.201"
+        app:srcCompat="@drawable/ic_fb" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVersion"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/imageView5"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_twit" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="119dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="78dp"
+        android:layout_height="66dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewVersion"
+        app:layout_constraintEnd_toStartOf="@+id/imageView5"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/ic_google" />
+
+    <EditText
+        android:id="@+id/txtNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInicio" />
+
+    <TextView
+        android:id="@+id/textViewInicio"
+        android:layout_width="210dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="168dp"
+        android:text="Inicia Sesión"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="#4DD0E1"
+        android:textColorLink="#64FFDA"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtNombreUsuario" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="20dp"
+        android:text="ACCEDER"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtPass" />
+
+    <ProgressBar
+        android:id="@+id/barraProgreso"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="91dp"
+        android:layout_height="75dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone" />
+    <Button
+        android:id="@+id/btnRegistro"
+        android:layout_width="199dp"
+        android:layout_height="48dp"
+        android:text="REGISTRAR"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnLogin"
+        app:layout_constraintVertical_bias="0.03" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="119dp"
+        android:layout_height="108dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewInicio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:mipmap/sym_def_app_icon" />
+
+    <TextView
+        android:id="@+id/textViewVersion"
+        android:layout_width="187dp"
+        android:layout_height="22dp"
+        android:hint="Version 1.0.0"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView5"
+        app:layout_constraintVertical_bias="0.826" />
+</androidx.constraintlayout.widget.ConstraintLayout>
